@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project( TrackApp )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( TrackApp track.cpp )
+target_link_libraries( TrackApp ${OpenCV_LIBS} )
